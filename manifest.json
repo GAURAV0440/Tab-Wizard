@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Wizard",
+    "version": "1.0",
+    "description": "Automatically customizes tab titles based on content analysis using an AI model.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "Wizard.html",
+      "default_icon": {
+        "48": "img.png"
+      }
+    }
+  }
