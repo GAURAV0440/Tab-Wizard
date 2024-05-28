@@ -32,7 +32,7 @@ document.getElementById('autoUpdate').addEventListener('click', () => {
         chrome.scripting.executeScript({
             target: {tabId: tabs[0].id},
             func: function(story) {
-                fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key= your apikey', {
+                fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key= AIzaSyDhxjo0ka-RFZ2SYlqc2eT_qlieuEPtpwU', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
